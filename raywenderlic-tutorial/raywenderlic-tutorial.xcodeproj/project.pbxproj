@@ -45,6 +45,8 @@
 		AAB4B8E92099BF3400EA734A /* sample.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB4B8E82099BF3400EA734A /* sample.png */; };
 		AAB4B8EB2099C27B00EA734A /* amb.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB4B8EA2099C27B00EA734A /* amb.png */; };
 		AAB4B8ED2099CB8C00EA734A /* switchLatest.png in Resources */ = {isa = PBXBuildFile; fileRef = AAB4B8EC2099CB8C00EA734A /* switchLatest.png */; };
+		AAEBE98F209C54F700D5D392 /* reduce.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEBE98E209C54F700D5D392 /* reduce.png */; };
+		AAEBE991209C583900D5D392 /* scan.png in Resources */ = {isa = PBXBuildFile; fileRef = AAEBE990209C583900D5D392 /* scan.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +91,8 @@
 		AAB4B8E82099BF3400EA734A /* sample.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sample.png; sourceTree = "<group>"; };
 		AAB4B8EA2099C27B00EA734A /* amb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amb.png; sourceTree = "<group>"; };
 		AAB4B8EC2099CB8C00EA734A /* switchLatest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchLatest.png; sourceTree = "<group>"; };
+		AAEBE98E209C54F700D5D392 /* reduce.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = reduce.png; sourceTree = "<group>"; };
+		AAEBE990209C583900D5D392 /* scan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan.png; sourceTree = "<group>"; };
 		B37429A219843334CEBB72CC /* Pods-raywenderlic-tutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raywenderlic-tutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-raywenderlic-tutorial/Pods-raywenderlic-tutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -199,6 +203,8 @@
 		AAB4B8BF2099A7E100EA734A /* Combining */ = {
 			isa = PBXGroup;
 			children = (
+				AAEBE990209C583900D5D392 /* scan.png */,
+				AAEBE98E209C54F700D5D392 /* reduce.png */,
 				AAB4B8EC2099CB8C00EA734A /* switchLatest.png */,
 				AAB4B8EA2099C27B00EA734A /* amb.png */,
 				AAB4B8E82099BF3400EA734A /* sample.png */,
@@ -287,6 +293,7 @@
 				AAB4B8C62099A7E200EA734A /* takeUntil.png in Resources */,
 				AAB4B8E72099B8A200EA734A /* withLatestFrom.png in Resources */,
 				AAB4B8C42099A7E200EA734A /* elementAt.png in Resources */,
+				AAEBE991209C583900D5D392 /* scan.png in Resources */,
 				AAB4B8D52099A7E200EA734A /* startWith.png in Resources */,
 				AAB4B8AA2099A7AD00EA734A /* data.txt in Resources */,
 				AAB4B8A02099A53700EA734A /* LaunchScreen.storyboard in Resources */,
@@ -304,6 +311,7 @@
 				AAB4B8D32099A7E200EA734A /* merge.png in Resources */,
 				AAB4B8D02099A7E200EA734A /* map.png in Resources */,
 				AAB4B8E52099B62F00EA734A /* zip.png in Resources */,
+				AAEBE98F209C54F700D5D392 /* reduce.png in Resources */,
 				AAB4B8D62099A7E200EA734A /* ignoreElements.png in Resources */,
 				AAB4B8C72099A7E200EA734A /* takeWhile.png in Resources */,
 				AAB4B8C52099A7E200EA734A /* skipUntil.png in Resources */,

@@ -366,8 +366,79 @@ class CombiningOperators {
         
         //MARK: - switchLatest()
         /*
-         
+        Note: It can be difficult to form a mental model of an observable of observables.
+         Don’t worry; you’ll get used to it. Practice is key to a fluid understanding of sequences.
+         Don’t hesitate to review the examples as your experience grows!
+         You’ll learn more about putting this to good use in the next chapter.
          */
+        
+        example(of: "switchLatest") {
+            
+            let one = PublishSubject<String>()
+            let two = PublishSubject<String>()
+            let three = PublishSubject<String>()
+            let source = PublishSubject<Observable<String>>()
+            
+            let observable = source.switchLatest()
+            let disposable = observable.subscribe(onNext: { value in
+                print(value)
+            })
+            
+            source.onNext(one)
+            one.onNext("Some text from sequence one") // Some text from sequence one
+            two.onNext("Some text from sequence two") // k in j
+            
+            source.onNext(two) // k in j
+            two.onNext("More text from sequence two") // More text from sequence two
+            one.onNext("and also from sequence one") // k in j
+            
+            source.onNext(three)
+            two.onNext("Why don't you see me?") //k in j
+            one.onNext("I'm alone, help me") // k in j
+            
+            three.onNext("Hey it's three. I win.") // Hey it's three. I win.
+            
+            source.onNext(one)
+            one.onNext("Nope. It's me, one!") //Nope. It's me, one!
+            
+            disposable.dispose()
+        }
+        
+        //MARK: - reduce
+        example(of: "reduce") {
+            let source = Observable.of(1, 3, 5, 7, 9)
+            
+            //let observable = source.reduce(0, accumulator: +)
+            
+            let observable = source.reduce(0, accumulator: { summary, newValue in
+                return summary + newValue
+            })
+            
+            observable.subscribe(onNext: { value in
+                print(value)
+            }).dispose()
+            
+            //print: 25
+        }
+        
+        //MARK: - scan
+        example(of: "scan") {
+            let source = Observable.of(1, 3, 5, 7, 9)
+            let observable = source.scan(0, accumulator: +)
+            observable.subscribe(onNext: { value in
+                print(value)
+            }).dispose()
+        }
+        /*
+         difference with reduce
+         --- Example of: scan ---
+         1
+         4
+         9
+         16
+         25
+         */
+        
         
     }
 }
