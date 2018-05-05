@@ -6,7 +6,15 @@ target 'raywenderlic-tutorial' do
   use_frameworks!
   pod 'RxSwift', '~> 4.0'
   pod 'RxCocoa', '~> 4.0'
-
+  pod 'RxDataSources', '~> 3.0'
+  pod 'Action', '~> 3.4'
+  pod "RxGesture"
+  
+  # Realm database
+  pod 'RealmSwift', '~> 3.2'
+  pod 'RxRealm', '~> 0.7'
+  
+  pod 'RxAlamofire'
   # Pods for raywenderlic-tutorial
 
 end

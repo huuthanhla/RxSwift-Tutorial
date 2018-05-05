@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		061701B47384DCF334411F8E /* Pods_raywenderlic_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01189E4BF6427F3663340235 /* Pods_raywenderlic_tutorial.framework */; };
+		0ECB1A6D209E21DC008170A8 /* TableView-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A6C209E21DC008170A8 /* TableView-CollectionView.swift */; };
+		0ECB1A6F209E298B008170A8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A6E209E298B008170A8 /* Action.swift */; };
+		0ECB1A71209E3197008170A8 /* RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A70209E3197008170A8 /* RxGesture.swift */; };
+		0ECB1A73209E34AB008170A8 /* RxRealm.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0ECB1A72209E34AB008170A8 /* RxRealm.rtf */; };
 		AAB4B8962099A53500EA734A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB4B8952099A53500EA734A /* AppDelegate.swift */; };
 		AAB4B8982099A53500EA734A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB4B8972099A53500EA734A /* ViewController.swift */; };
 		AAB4B89B2099A53500EA734A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAB4B8992099A53500EA734A /* Main.storyboard */; };
@@ -51,6 +55,10 @@
 
 /* Begin PBXFileReference section */
 		01189E4BF6427F3663340235 /* Pods_raywenderlic_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raywenderlic_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ECB1A6C209E21DC008170A8 /* TableView-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView-CollectionView.swift"; sourceTree = "<group>"; };
+		0ECB1A6E209E298B008170A8 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
+		0ECB1A70209E3197008170A8 /* RxGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGesture.swift; sourceTree = "<group>"; };
+		0ECB1A72209E34AB008170A8 /* RxRealm.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = RxRealm.rtf; sourceTree = "<group>"; };
 		1E58041C10D869DE0F7A18CA /* Pods-raywenderlic-tutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-raywenderlic-tutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-raywenderlic-tutorial/Pods-raywenderlic-tutorial.release.xcconfig"; sourceTree = "<group>"; };
 		AAB4B8922099A53500EA734A /* raywenderlic-tutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "raywenderlic-tutorial.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAB4B8952099A53500EA734A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +116,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0ECB1A6B209E21BE008170A8 /* RxCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				0ECB1A6C209E21DC008170A8 /* TableView-CollectionView.swift */,
+				0ECB1A6E209E298B008170A8 /* Action.swift */,
+				0ECB1A70209E3197008170A8 /* RxGesture.swift */,
+				0ECB1A72209E34AB008170A8 /* RxRealm.rtf */,
+			);
+			path = RxCocoa;
+			sourceTree = "<group>";
+		};
 		1F317C084CEBCEC020BFE956 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,6 +165,7 @@
 		AAB4B8942099A53500EA734A /* raywenderlic-tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0ECB1A6B209E21BE008170A8 /* RxCocoa */,
 				AAB4B8D72099A82A00EA734A /* RxSwift */,
 				AAB4B8952099A53500EA734A /* AppDelegate.swift */,
 				AAB4B8972099A53500EA734A /* ViewController.swift */,
@@ -290,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ECB1A73209E34AB008170A8 /* RxRealm.rtf in Resources */,
 				AAB4B8C62099A7E200EA734A /* takeUntil.png in Resources */,
 				AAB4B8E72099B8A200EA734A /* withLatestFrom.png in Resources */,
 				AAB4B8C42099A7E200EA734A /* elementAt.png in Resources */,
@@ -334,12 +355,30 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-raywenderlic-tutorial/Pods-raywenderlic-tutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Action/Action.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/RxRealm/RxRealm.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Action.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxRealm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -375,11 +414,14 @@
 				AAB4B8E12099A82A00EA734A /* CombiningOperators.swift in Sources */,
 				AAB4B8982099A53500EA734A /* ViewController.swift in Sources */,
 				AAB4B8DE2099A82A00EA734A /* Subject.swift in Sources */,
+				0ECB1A6F209E298B008170A8 /* Action.swift in Sources */,
 				AAB4B8962099A53500EA734A /* AppDelegate.swift in Sources */,
 				AAB4B8E02099A82A00EA734A /* Observable.swift in Sources */,
 				AAB4B8A82099A67E00EA734A /* Utils.swift in Sources */,
+				0ECB1A71209E3197008170A8 /* RxGesture.swift in Sources */,
 				AAB4B8DF2099A82A00EA734A /* FilteringOperator.swift in Sources */,
 				AAB4B8DD2099A82A00EA734A /* TransformingOperator.swift in Sources */,
+				0ECB1A6D209E21DC008170A8 /* TableView-CollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,8 +496,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -508,8 +550,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
@@ -526,6 +568,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHH5R3N766;
+				GCC_WARN_UNUSED_VALUE = NO;
 				INFOPLIST_FILE = "raywenderlic-tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -545,6 +588,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FHH5R3N766;
+				GCC_WARN_UNUSED_VALUE = NO;
 				INFOPLIST_FILE = "raywenderlic-tutorial/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
