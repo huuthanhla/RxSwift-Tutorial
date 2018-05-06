@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		061701B47384DCF334411F8E /* Pods_raywenderlic_tutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01189E4BF6427F3663340235 /* Pods_raywenderlic_tutorial.framework */; };
+		0E2BE54E209EF8D70016B62E /* PublishSubject.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2BE54D209EF8D70016B62E /* PublishSubject.png */; };
+		0E2BE550209EF8FF0016B62E /* BehaviorSubject.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2BE54F209EF8FF0016B62E /* BehaviorSubject.png */; };
+		0E2BE552209EF9400016B62E /* replaySubject.png in Resources */ = {isa = PBXBuildFile; fileRef = 0E2BE551209EF9400016B62E /* replaySubject.png */; };
 		0ECB1A6D209E21DC008170A8 /* TableView-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A6C209E21DC008170A8 /* TableView-CollectionView.swift */; };
 		0ECB1A6F209E298B008170A8 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A6E209E298B008170A8 /* Action.swift */; };
 		0ECB1A71209E3197008170A8 /* RxGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ECB1A70209E3197008170A8 /* RxGesture.swift */; };
@@ -55,6 +58,9 @@
 
 /* Begin PBXFileReference section */
 		01189E4BF6427F3663340235 /* Pods_raywenderlic_tutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_raywenderlic_tutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E2BE54D209EF8D70016B62E /* PublishSubject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PublishSubject.png; sourceTree = "<group>"; };
+		0E2BE54F209EF8FF0016B62E /* BehaviorSubject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BehaviorSubject.png; sourceTree = "<group>"; };
+		0E2BE551209EF9400016B62E /* replaySubject.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = replaySubject.png; sourceTree = "<group>"; };
 		0ECB1A6C209E21DC008170A8 /* TableView-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView-CollectionView.swift"; sourceTree = "<group>"; };
 		0ECB1A6E209E298B008170A8 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		0ECB1A70209E3197008170A8 /* RxGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxGesture.swift; sourceTree = "<group>"; };
@@ -116,6 +122,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E2BE54C209EF8A60016B62E /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				0E2BE54D209EF8D70016B62E /* PublishSubject.png */,
+				0E2BE54F209EF8FF0016B62E /* BehaviorSubject.png */,
+				0E2BE551209EF9400016B62E /* replaySubject.png */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
 		0ECB1A6B209E21BE008170A8 /* RxCocoa */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +199,7 @@
 		AAB4B8AD2099A7E100EA734A /* marble-diagram */ = {
 			isa = PBXGroup;
 			children = (
+				0E2BE54C209EF8A60016B62E /* Subject */,
 				AAB4B8AF2099A7E100EA734A /* Filtering */,
 				AAB4B8B92099A7E100EA734A /* Transforming */,
 				AAB4B8BF2099A7E100EA734A /* Combining */,
@@ -311,10 +328,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0ECB1A73209E34AB008170A8 /* RxRealm.rtf in Resources */,
+				0E2BE550209EF8FF0016B62E /* BehaviorSubject.png in Resources */,
 				AAB4B8C62099A7E200EA734A /* takeUntil.png in Resources */,
 				AAB4B8E72099B8A200EA734A /* withLatestFrom.png in Resources */,
 				AAB4B8C42099A7E200EA734A /* elementAt.png in Resources */,
 				AAEBE991209C583900D5D392 /* scan.png in Resources */,
+				0E2BE552209EF9400016B62E /* replaySubject.png in Resources */,
 				AAB4B8D52099A7E200EA734A /* startWith.png in Resources */,
 				AAB4B8AA2099A7AD00EA734A /* data.txt in Resources */,
 				AAB4B8A02099A53700EA734A /* LaunchScreen.storyboard in Resources */,
@@ -322,6 +341,7 @@
 				AAB4B89B2099A53500EA734A /* Main.storyboard in Resources */,
 				AAB4B8CA2099A7E200EA734A /* distinctUntilChanged.png in Resources */,
 				AAB4B8CE2099A7E200EA734A /* flatMapLatest.png in Resources */,
+				0E2BE54E209EF8D70016B62E /* PublishSubject.png in Resources */,
 				AAB4B8E92099BF3400EA734A /* sample.png in Resources */,
 				AAB4B8CB2099A7E200EA734A /* filter.png in Resources */,
 				AAB4B8CF2099A7E200EA734A /* materialize.png in Resources */,
