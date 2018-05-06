@@ -29,7 +29,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //TransformingOperator.test()
         
         //Test Combining operators
-        CombiningOperators.test()
+        //CombiningOperators.test()
         
         return true
     }

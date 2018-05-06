@@ -30,6 +30,22 @@ class SubjectTest {
             subject.on(.next("1"))
         }
         
+        example(of: "binding two subject") {
+            var sb1 = PublishSubject<String>()
+            let sb2 = PublishSubject<String>()
+            sb1 = sb2
+            //sb2 = sb1
+            sb1.subscribe(onNext: {string in
+                print("sb1: \(string)")
+            }).disposed(by: disposeBag)
+            
+            sb2.subscribe(onNext: {string in
+                print("sb2: \(string)")
+            }).disposed(by: disposeBag)
+            
+            sb2.onNext("Hello world")
+            sb1.onNext("rxswift")
+        }
         
     }
 }
